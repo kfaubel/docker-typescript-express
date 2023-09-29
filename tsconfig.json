@@ -1,0 +1,17 @@
+{
+    "extends": "@tsconfig/node20/tsconfig.json",
+    "compilerOptions": {        
+        "outDir": "dist",
+        "rootDir": "src",
+
+        "explainFiles": false,            // Set to "true" to explain why files are included or excluded from the program
+        "listEmittedFiles": false,        // Set to "true" to list all emitted files
+    },
+    
+    "include": [
+        "src/**/*.ts"                     // **/*.ts - "**" means zero or more folders
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
